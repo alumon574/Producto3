@@ -59,24 +59,29 @@ public class Seeds {
         menuRepository.save(menuVeggie);
         menuRepository.save(menuBurguer);
 
-        Product productPollo = new Product("Pollo",5.00);
-        Product productSeitan = new Product("Seitan",7.00);
-        Product productTofu = new Product("Tofu",6.50);
-        Product productTernera = new Product("Ternera",5.50);
-        Product productSetas = new Product("Setas",2.00);
-        productRepository.save(productPollo);
-        productRepository.save(productSeitan);
-        productRepository.save(productTofu);
-        productRepository.save(productTernera);
-        productRepository.save(productSetas);
+        Product product1 = new Product("One piece",7.00);
+        Product product2 = new Product("Dragon ball",8.00);
 
-        productPollo.getMenusAssociated().addAll(List.of(menuVeggie, menuBurguer));
-        productRepository.save(productPollo);
-
-        productSetas.getMenusAssociated().addAll(List.of(menuLibanes, menuVeggie, menuBurguer));
-        productRepository.save(productSetas);
-
-        productTernera.getMenusAssociated().addAll(List.of(menuBurguer));
-        productRepository.save(productTernera);
+//        Product productPollo = new Product("Pollo",5.00);
+//        Product productSeitan = new Product("Seitan",7.00);
+//        Product productTofu = new Product("Tofu",6.50);
+//        Product productTernera = new Product("Ternera",5.50);
+//        Product productSetas = new Product("Setas",2.00);
+//        productRepository.save(productPollo);
+//        productRepository.save(productSeitan);
+//        productRepository.save(productTofu);
+//        productRepository.save(productTernera);
+//        productRepository.save(productSetas);
+//
+//        productPollo.getMenusAssociated().addAll(List.of(menuVeggie, menuBurguer));
+//        productRepository.save(productPollo);
+//
+//        productSetas.getMenusAssociated().addAll(List.of(menuLibanes, menuVeggie, menuBurguer));
+//        productRepository.save(productSetas);
+//
+//        productTernera.getMenusAssociated().addAll(List.of(menuBurguer));
+//        productRepository.save(productTernera);
+        productRepository.save(product1);
+        productRepository.save(product2);
     }
 }
